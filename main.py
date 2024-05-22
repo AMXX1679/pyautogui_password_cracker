@@ -5,7 +5,6 @@ import random
 with open('passwords.txt', 'r') as file:
     passwords = file.readlines()
 
-print("Bitte wähle das Passwortfeld in den nächsten 5 Sekunden aus.")
 time.sleep(5)
 
 for password in passwords:
