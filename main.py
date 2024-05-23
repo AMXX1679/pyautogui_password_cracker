@@ -18,7 +18,7 @@ for password in passwords:
     pyautogui.press('backspace')
 
 for _ in range(99999999999):
-    random_password = ''.join(random.choices(password.strip(), k=random.randint(1, 16)))
+    random_password = ''.join(random.choices(password.strip(), k=random.randint(1, 32)))
     pyautogui.typewrite(random_password)
     pyautogui.press('enter')
     pyautogui.hotkey('ctrl', 'a')
